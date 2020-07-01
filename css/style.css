@@ -1,0 +1,68 @@
+ /*reset css*/
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body{
+background-image: url(../img/fundofinal.jpg);
+background-size: auto 129vh;
+font-family: Arial, Helvetica, sans-serif;
+height: 100vh;
+
+}
+/*se a tela tiver pelo menos 400px vao carregar estes estilos*/
+@media (min-width: 400px) {
+ body {
+     font-size: 14px;
+ }
+}
+/*breakpoint*/
+@media (min-width: 600px) {
+ body {
+     font-size: 18px;
+ }
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.menu {
+    background-color: whitesmoke;
+    position: fixed;
+    width: 100vw;  
+    top: 0px;
+}
+.menu a {
+    display: block;
+    padding: 10px 20px;
+}
+.menu ul {
+    display: flex; /*deixa a lista do lado do outro*/
+    justify-content: space-evenly; /*espacamento entre as listas*/
+}
+.menu li {
+    list-style: none;/*tirando as bolinhas da lista*/
+}
+.site-title {
+    font-size: 5em;
+}
+.site-title , .site-subtitle {
+    color: whitesmoke;
+    text-align: center;
+}
+.site-subtitle {
+    font-style: italic;
+}
